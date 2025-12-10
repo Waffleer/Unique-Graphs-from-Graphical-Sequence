@@ -17,7 +17,7 @@ public:
 
 
     Row* get_root(){ return this->Sequence; }
-    std::vector<int> get_sequence(){ return this->Sequence->get_sequence(); }
+    std::vector<int> get_sequence();
     int get_length() { return this->length; }
     int get_iteration() { return this->iteration; }
     
