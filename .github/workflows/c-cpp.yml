@@ -10,9 +10,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v4
-    - name: make
+
+    - name: Build Project
       working-directory: ./build
       run: make
