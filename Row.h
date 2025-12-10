@@ -24,8 +24,6 @@ public:
     void add_children(Row*);
 
     void delete_node();
-
-    bool is_done();
 private:
     // Helper functions for class
     void set_parent(Row* row);

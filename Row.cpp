@@ -29,11 +29,6 @@ void Row::delete_node()
     this->num_of_children--;
 }
 
-bool Row::is_done()
-{
-    return !this->sequence.empty();
-}
-
 void Row::set_sequence(std::vector<int> sequence)
 {
     this->sequence = sequence;
