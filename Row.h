@@ -10,7 +10,6 @@ protected:
     std::vector<Row*> children;
     int num_of_children;
     std::vector<int> sequence;
-    std::vector<int> ordered_sequence;
     std::vector<bool> operation;
 
 public:
@@ -19,6 +18,9 @@ public:
 
     std::vector<int> get_sequence();
     Row* get_parent();
+    std::vector<Row*> get_children();
+    std::vector<bool> get_operation();
+    int get_num_children();
     
     void add_children(Row*);
 
@@ -30,6 +32,4 @@ private:
     // Helper functions for class
     void set_parent(Row* row);
     void set_sequence(std::vector<int> sequence);
-    void order_sequence();
-
 };
