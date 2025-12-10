@@ -19,7 +19,7 @@ void Row::add_children(Row* row)
     this->children.push_back(row);
 }
 
-void Row::delete_node() // TODO
+void Row::delete_node()
 {
     if( this->num_of_children <= 1)
     {
@@ -34,26 +34,32 @@ bool Row::is_done()
     return !this->operation.empty();
 }
 
-void Row::order_sequence() // TODO
-{
-
-}
-
-
 void Row::set_sequence(std::vector<int> sequence)
 {
     this->sequence = sequence;
 }
+void Row::set_parent(Row* row)
+{
+    this->parent = row;
+}
+
 std::vector<int> Row::get_sequence()
 {
     return this->sequence;
 }
-
-void Row::set_parent(Row* row) // TODO
-{
-    this->parent = row;
-}
-Row *Row::get_parent()
+Row* Row::get_parent()
 {
     return this->parent;
+}
+std::vector<Row*> Row::get_children()
+{
+    return this->children;
+}
+std::vector<bool> Row::get_operation()
+{
+    return std::vector<bool>();
+}
+int Row::get_num_children()
+{
+    return this->num_of_children;
 }
