@@ -10,7 +10,6 @@ protected:
     std::vector<Row*> children;
     int num_of_children;
     std::vector<int> sequence;
-    std::vector<bool> operation;
 
 public:
     Row(Row* parent); // Takes in parent Node
@@ -27,7 +26,6 @@ public:
     void delete_node();
 
     bool is_done();
-
 private:
     // Helper functions for class
     void set_parent(Row* row);

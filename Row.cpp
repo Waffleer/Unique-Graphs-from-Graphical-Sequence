@@ -31,7 +31,7 @@ void Row::delete_node()
 
 bool Row::is_done()
 {
-    return !this->operation.empty();
+    return !this->sequence.empty();
 }
 
 void Row::set_sequence(std::vector<int> sequence)
@@ -55,7 +55,7 @@ std::vector<Row*> Row::get_children()
 {
     return this->children;
 }
-std::vector<bool> Row::get_operation()
+std::vector<bool> Row::get_operation() // TODO
 {
     return std::vector<bool>();
 }
