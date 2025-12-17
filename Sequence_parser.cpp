@@ -29,7 +29,7 @@ void Sequence_parser::create_root(std::vector<int> sequence)
 
 
 // ---------------------------------------------------------------------------
-// generate_edge_combinations
+// generate_edge_combinations ( Chatgpt )
 //
 // Generates all possible ways to place `number` objects into `bins` bins,
 // where:
